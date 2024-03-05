@@ -25,7 +25,7 @@ A project that plays [MASH](https://www.youtube.com/watch?v=ZoiZwWW1qao)
 - I included a light and dark mode. This comes prebuilt with flowbite and tailwind, so gives its 1 line of code, it felt like a nice little addition.
 - I randomly generate a Magic number between 1 and 10. This allows playing the same game multiple times easily.
 
-### Future considerations
+### Future considerations
 
 - Generating a Magic number may take away some of the fun. I would either allow the user to enter the number themselves, or do some form of like dice animation to show them how its been generated.
 - I would want to pull the algorithm out and write some unit tests on it to validate it gives the correct result.
