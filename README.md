@@ -43,3 +43,4 @@ npm run dev
 - The app is styled in a way where it will work fine across mobile and desktop, but it could be nicer on both.
 - As mentioned above, I would add a simple router to make things like the browser `back` button work better. Also to allow saving of results by id.
 - I would do a better file structure than just having everything flat. I started that with the `/components` - but having a `/pages/game/PlayGame` would make sense if moving to a proper router setup.
+- The results page could be much nicer!
