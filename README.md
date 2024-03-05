@@ -38,6 +38,8 @@ npm run dev
 
 - Generating a Magic number may take away some of the fun. I would either allow the user to enter the number themselves, or do some form of like dice animation to show them how its been generated.
 - I would want to pull the algorithm out and write some unit tests on it to validate it gives the correct result.
+- There is currently no protections against certain things - like if a category has no options assigned. I would most likely throw errors and show the user what missing here so they can resolve it.
+- I would add a fast forward/skip button as kids of different ages will want to see different things. Younger kids will most likely want to see the animation but older kids just want the result
 - The app is styled in a way where it will work fine across mobile and desktop, but it could be nicer on both.
 - As mentioned above, I would add a simple router to make things like the browser `back` button work better. Also to allow saving of results by id.
 - I would do a better file structure than just having everything flat. I started that with the `/components` - but having a `/pages/game/PlayGame` would make sense if moving to a proper router setup.

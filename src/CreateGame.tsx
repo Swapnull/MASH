@@ -78,20 +78,32 @@ function CreateGame({ play }: CreateGameProps) {
           return (
             <div key={category.name} className="mt-8 justify-start text-left">
               <div className="mb-2">Category name</div>
-              <Input
-                value={category.name}
-                update={(newValue) =>
-                  setCategories((prev) => {
-                    const newArr = [...prev];
-                    newArr[index] = {
-                      ...newArr[index],
-                      name: newValue,
-                    };
-                    return newArr;
-                  })
-                }
-              />
-
+              <div className="flex items-center gap-2">
+                <Input
+                  value={category.name}
+                  update={(newValue) =>
+                    setCategories((prev) => {
+                      const newArr = [...prev];
+                      newArr[index] = {
+                        ...newArr[index],
+                        name: newValue,
+                      };
+                      return newArr;
+                    })
+                  }
+                />
+                <Trash2
+                  size="1rem"
+                  className="!cursor-pointer"
+                  onClick={() => {
+                    setCategories((prev) => {
+                      const newArr = [...prev];
+                      newArr.splice(index, 1);
+                      return newArr;
+                    });
+                  }}
+                />
+              </div>
               <div className="flex flex-col gap-2 mt-4">
                 <div>Options</div>
 
