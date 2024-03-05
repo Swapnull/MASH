@@ -2,6 +2,15 @@
 
 A project that plays [MASH](https://www.youtube.com/watch?v=ZoiZwWW1qao)
 
+## Getting started
+
+Install and run with
+
+```
+npm install
+npm run dev
+```
+
 ## Decisions/Rationale
 
 ### Technical
